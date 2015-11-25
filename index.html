@@ -82,15 +82,53 @@
 					<h1>¿Tú que PaaS usarías?</h1>
 				</section>
 
-
 				<section>
-					<h1>Utilidades chachis de OpenShift</h1>
-					<ul>
-						<li>Hot Deployment</li>
-						<li>Action Hook</li>
-						<li>Cron Jobs</li>
-						<li>Cualquier cosa del "Marketplace"</li>
-					</ul>
+					<section>
+						<h1>Utilidades chachis de OpenShift</h1>
+						<ul>
+							<li>Hot Deployment</li>
+							<li>Action Hooks</li>
+							<li>Cron Jobs</li>
+							<li>Cualquier cosa del "Marketplace"</li>
+						</ul>
+					</section>
+
+
+					<section>
+					<h2>Markers</h2>
+						<p>Solo hay que crear un fichero en "openshift/markers"</p>
+						<ul>
+							<li>force_clean_build</li>
+							<li>hot_deploy</li>
+							<li>disable_auto_scaling</li>
+						</ul>
+				</section>
+
+
+					<section>
+					<h2>Alguien preguntó por hooks (1)</h2>
+						<p>Esto va en la carpeta ".openshift/hooks"</p>
+							<h3>Cartridge</h3>
+							<ul>
+								<li>start -> al iniciar</li>
+								<li>stop -> al parar</li>
+								<li>reload -> al reiniciar</li>
+								<li>tidy -> al liberar</li>
+							</ul>
+				</section>
+
+						<section>
+							<h2>Alguien preguntó por hooks (2)</h2>
+							<h3>Build</h3>
+							<ul>
+								<li>prebuild</li>
+								<li>build</li>
+								<li>deploy</li>
+								<li>post_deploy</li>
+							</ul>
+							<p>Escritos en lo que tengas instalado en el cartbridge</p>
+					</section>
+
 				</section>
 
 				<section>
@@ -176,8 +214,6 @@
 					<ul>
 						<li class="fragment">Mobile Backend aaS</li>
 						<li class="fragment">Database aaS</li>
-						<li class="fragment">Compute Infrastructure aaS</li>
-						<li class="fragment">Big Data aaS</li>
 					</ul>
 				</section>
 
